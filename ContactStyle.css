@@ -1,0 +1,27 @@
+.Contact h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+
+.Contact .game-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap; 
+    margin: 0 auto; 
+}
+
+.Contact p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Contact img{
+
+    
+    width: 30px;
+    height: 30px;
+}

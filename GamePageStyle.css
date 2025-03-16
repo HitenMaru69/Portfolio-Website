@@ -1,0 +1,29 @@
+.Game h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+
+.Game .game-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap; 
+    margin: 0 auto; 
+}
+
+.Game figure
+{
+    color: white;
+    text-align: center;
+}
+
+.Game img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    
+}
+

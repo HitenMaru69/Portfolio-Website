@@ -1,0 +1,59 @@
+header
+{
+    /* background-color: rgb(59, 59, 59); */
+    padding: 30px;
+
+}
+
+
+
+header .NameStyle div
+{
+    text-align: left ;
+    color:  rgb(255, 93, 93);;
+    font-size: 25px;
+}
+
+ul
+{
+    list-style-type: none;
+    text-align: right;
+    margin-top: -20px;
+}
+
+li
+{
+    display: inline-block;
+    margin-left: 40px;
+    color: white;
+
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover
+{
+    color: rgb(240, 123, 123);
+}
+
+body {
+    background-color: rgb(29, 29, 29);
+    background-image: url('../Image/Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+@media screen and (max-width: 550px) {
+
+    li {
+        display: inline-block; /* Change from inline-block to block */
+        margin-left: 10px; /* Add space between items */
+        text-align: center;
+    }
+}
+
