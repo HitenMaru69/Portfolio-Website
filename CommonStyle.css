@@ -43,7 +43,7 @@ a:hover
 body {
     background-color: rgb(29, 29, 29);
     background-image: url('Image/Background.png');
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
     /* background-repeat: repeat; */
 }
