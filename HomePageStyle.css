@@ -10,7 +10,7 @@
     font-size: 40px;
 }
 
-.Info div {
+/* .Info div {
     background-color:  rgb(185, 46, 46);;
     height: 25px;
     width: 120px; 
@@ -21,13 +21,12 @@
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-}
+} */
 
 #about {
     color: white;
     text-align: center;
-    margin-top: 5000px;
-    margin-bottom: 350px;
+    margin-top: 50px;
     padding: 50px;
 }
 
