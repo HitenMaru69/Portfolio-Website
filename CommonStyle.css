@@ -45,7 +45,7 @@ body {
     background-image: url('Image/Background.png');
     background-size: cover;
     background-position: center;
-    background-repeat: repeat;
+    /* background-repeat: repeat; */
 }
 
 @media screen and (max-width: 550px) {
