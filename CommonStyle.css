@@ -46,7 +46,8 @@ body {
     background-size: cover; /* Ensures the image covers the whole screen */
     background-position: center;
     background-repeat: no-repeat; /* Prevents tiling */
-    height: 100vh; /* Makes sure it covers the full viewport height */
+    background-attachment: fixed; /* Keeps background fixed while scrolling */
+    min-height: 100vh; /* Allows page to grow beyond screen height */
     width: 100vw; /* Ensures it covers the full viewport width */
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
