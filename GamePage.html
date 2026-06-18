@@ -1,87 +1,78 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <Title> Potfoliyo </Title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Published games and gameplay showcases by Unity game developer Hiten Maru.">
+    <title>Games | Hiten Maru</title>
     <link rel="stylesheet" href="CommonStyle.css">
     <link rel="stylesheet" href="GamePageStyle.css">
+    <script src="site.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <section class="NameStyle">
-            <div>
-                <strong>Hiten Maru</strong>
-            </div>
-
-            <nav>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="HomePage.html" aria-label="Hiten Maru home"><span class="brand-mark">HM</span><span class="brand-name">Hiten Maru</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Toggle navigation"><span></span></button>
+            <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
                 <ul>
                     <li><a href="HomePage.html">Home</a></li>
-                    <li><a href="GamePage.html">Game</a></li>
-                    <li><a href="PrototypePage.html">Prototype</a></li>
+                    <li><a href="GamePage.html" aria-current="page">Games</a></li>
+                    <li><a href="PrototypePage.html">Prototypes</a></li>
                     <li><a href="ContactPage.html">Contact</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </header>
 
-    <section class="Game">
-        <h2>Games</h2>
-        <div class="game-container">
+    <main class="page-main">
+        <section class="page-intro">
+            <div class="container reveal">
+                <p class="eyebrow">Released work</p>
+                <h1>Games</h1>
+                <p>Published titles and gameplay showcases built around engaging interactions and polished player experiences.</p>
+            </div>
+        </section>
 
-            <figure>
-                <a href="https://apps.apple.com/us/app/super-style-chess/id6447956180"><img src="Image/Chess Logo.png"
-                        alt="Chess logo"></a>
-                <figcaption><strong>Super Style Chess</strong></figcaption>
-            </figure>
+        <section class="section" aria-labelledby="released-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div><p class="eyebrow">Available to play</p><h2 class="section-title" id="released-title">Published Titles</h2></div>
+                    <span class="section-count">03 releases</span>
+                </div>
+                <div class="release-grid reveal">
+                    <article class="release-card">
+                        <a class="release-image" href="https://apps.apple.com/us/app/super-style-chess/id6447956180" target="_blank" rel="noopener noreferrer" aria-label="View Super Style Chess on the App Store"><img src="Image/Chess Logo.png" alt="Super Style Chess game artwork"></a>
+                        <div class="release-info"><div><h2>Super Style Chess</h2><p>App Store</p></div><a class="store-link" href="https://apps.apple.com/us/app/super-style-chess/id6447956180" target="_blank" rel="noopener noreferrer" aria-label="Open Super Style Chess store page">&#8599;</a></div>
+                    </article>
+                    <article class="release-card">
+                        <a class="release-image" href="https://play.google.com/store/apps/details?id=com.dream777.app" target="_blank" rel="noopener noreferrer" aria-label="View Black Jack on Google Play"><img src="Image/Black jack.png" alt="Black Jack game artwork"></a>
+                        <div class="release-info"><div><h2>Black Jack</h2><p>Google Play</p></div><a class="store-link" href="https://play.google.com/store/apps/details?id=com.dream777.app" target="_blank" rel="noopener noreferrer" aria-label="Open Black Jack store page">&#8599;</a></div>
+                    </article>
+                    <article class="release-card">
+                        <a class="release-image" href="https://play.google.com/store/apps/details?id=com.xa.runnerrunner&amp;hl=en_IN&amp;gl=US" target="_blank" rel="noopener noreferrer" aria-label="View Runner Runner on Google Play"><img src="Image/Runner Runner Logo.png" alt="Runner Runner game artwork"></a>
+                        <div class="release-info"><div><h2>Runner Runner</h2><p>Google Play</p></div><a class="store-link" href="https://play.google.com/store/apps/details?id=com.xa.runnerrunner&amp;hl=en_IN&amp;gl=US" target="_blank" rel="noopener noreferrer" aria-label="Open Runner Runner store page">&#8599;</a></div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-            <figure>
-                <a href="https://play.google.com/store/apps/details?id=com.dream777.app"><img src="Image/Black jack.png"
-                        alt="BlackJack_Logo"></a>
-                <figcaption><strong>Black Jack</strong></figcaption>
-            </figure>
+        <section class="section showcase-section" aria-labelledby="showcase-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div><p class="eyebrow">In motion</p><h2 class="section-title" id="showcase-title">Gameplay Showcase</h2></div>
+                    <span class="section-count">04 videos</span>
+                </div>
+                <div class="video-grid">
+                    <figure class="video-card reveal"><div class="video-frame"><video controls preload="metadata" playsinline aria-label="Ammo gameplay video"><source src="Ammo.mp4" type="video/mp4">Your browser does not support embedded video.</video></div><figcaption><span class="video-title">Ammo</span><span class="video-type">Gameplay</span></figcaption></figure>
+                    <figure class="video-card reveal"><div class="video-frame"><video controls preload="metadata" playsinline aria-label="Solitaire gameplay video"><source src="Solitire.mp4" type="video/mp4">Your browser does not support embedded video.</video></div><figcaption><span class="video-title">Solitaire</span><span class="video-type">Gameplay</span></figcaption></figure>
+                    <figure class="video-card reveal"><div class="video-frame"><video controls preload="metadata" playsinline aria-label="AI Explorer gameplay video"><source src="AI Explorer.mp4" type="video/mp4">Your browser does not support embedded video.</video></div><figcaption><span class="video-title">AI Explorer</span><span class="video-type">Gameplay</span></figcaption></figure>
+                    <figure class="video-card reveal"><div class="video-frame"><video controls preload="metadata" playsinline aria-label="Diamond Painting gameplay video"><source src="DiamondArt Painting.mp4" type="video/mp4">Your browser does not support embedded video.</video></div><figcaption><span class="video-title">Diamond Painting</span><span class="video-type">Gameplay</span></figcaption></figure>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            <figure>
-                <a href="https://play.google.com/store/apps/details?id=com.xa.runnerrunner&hl=en_IN&gl=US"><img
-                        src="Image/Runner Runner Logo.png" alt="Runner Runner logo"></a>
-                <figcaption><strong>Runner Runner</strong></figcaption>
-            </figure>
-
-
-            <figure>
-                <video controls>
-                    <source src="Ammo.mp4" type="video/mp4">
-                </video>
-                <figcaption><strong>Ammo</strong></figcaption>
-            </figure>
-
-            <figure>
-                <video controls>
-                    <source src="Solitire.mp4" type="video/mp4">
-                </video>
-                <figcaption><strong>Solitaire</strong></figcaption>
-            </figure>
-
-            <figure>
-                <video controls>
-                    <source src="AI Explorer.mp4" type="video/mp4">
-                </video>
-                <figcaption><strong>AI Explorer</strong></figcaption>
-            </figure>
-
-            <figure>
-                <video controls>
-                    <source src="DiamondArt Painting.mp4" type="video/mp4">
-                </video>
-                <figcaption><strong>Diamond Painting</strong></figcaption>
-            </figure>
-
-        </div>
-    </section>
-
-
-
-
+    <footer class="site-footer"><div class="container footer-inner"><strong>Hiten Maru</strong><span>Unity Game Developer</span></div></footer>
 </body>
-
 </html>

@@ -1,63 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <head>
-            <Title> Potfoliyo </Title>
-            <link rel="stylesheet" href="CommonStyle.css">
-            <link rel="stylesheet" href="PrototypeStyle.css">
-    </head>
-    <body>
-        <header>
-            <section class="NameStyle">
-                <div>
-                    <strong>Hiten Maru</strong>
-                </div>
-
-                <nav>
-                    <ul>
-                        <li><a href="HomePage.html">Home</a></li>
-                        <li><a href="GamePage.html">Game</a></li>
-                        <li><a href="PrototypePage.html">Prototype</a></li>
-                        <li><a href="ContactPage.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </header>
-
-        <section class="Prototype">
-            <h2>Prototypes</h2>
-
-            <div class="game-container">
-
-                <figure>
-                    <video controls src="Video/Hotel Managment.mp4"></video>
-                </figure>
-    
-                <figure>
-                    <video controls src="Video/Cross Road Game.mp4"></video>
-                </figure>
-
-                <figure>
-                    <video controls src="Video/Level up runner.mov"></video>
-                </figure>
-    
-                <figure>
-                    <video controls src="Video/Ball Blast.mp4"></video>
-                </figure>
-
-                <figure>
-                    <video controls src="Video/Dice Merge.mp4"></video>
-                </figure>
-
-                <figure>
-                    <video controls src="Video/Ar Demo.mp4"></video>
-                </figure>
-    
-                <figure>
-                    <video controls src="Video/AR Zombie Demo.mp4"></video>
-                </figure>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game mechanics and interactive prototypes created by Unity game developer Hiten Maru.">
+    <title>Prototypes | Hiten Maru</title>
+    <link rel="stylesheet" href="CommonStyle.css">
+    <link rel="stylesheet" href="PrototypeStyle.css">
+    <script src="site.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="HomePage.html" aria-label="Hiten Maru home"><span class="brand-mark">HM</span><span class="brand-name">Hiten Maru</span></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Toggle navigation"><span></span></button>
+            <nav class="site-nav" id="site-navigation" aria-label="Primary navigation"><ul><li><a href="HomePage.html">Home</a></li><li><a href="GamePage.html">Games</a></li><li><a href="PrototypePage.html" aria-current="page">Prototypes</a></li><li><a href="ContactPage.html">Contact</a></li></ul></nav>
         </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-intro"><div class="container reveal"><p class="eyebrow">Playable experiments</p><h1>Prototypes</h1><p>A collection of mechanics, concepts, and interactive ideas explored through rapid game development.</p></div></section>
+        <section class="section prototype-section" aria-labelledby="prototype-gallery-title">
+            <div class="container">
+                <div class="section-header reveal"><div><p class="eyebrow">Mechanics in motion</p><h2 class="section-title" id="prototype-gallery-title">Prototype Gallery</h2></div><span class="section-count">07 experiments</span></div>
+                <div class="prototype-grid">
+                    <figure class="prototype-card reveal"><div class="prototype-media"><video controls preload="metadata" playsinline aria-label="Hotel Management prototype video" src="Video/Hotel Managment.mp4"></video></div><figcaption><span class="prototype-name">Hotel Management</span><span class="prototype-number">01</span></figcaption></figure>
+                    <figure class="prototype-card reveal"><div class="prototype-media"><video controls preload="metadata" playsinline aria-label="Cross Road Game prototype video" src="Video/Cross Road Game.mp4"></video></div><figcaption><span class="prototype-name">Cross Road Game</span><span class="prototype-number">02</span></figcaption></figure>
+                    <figure class="prototype-card reveal"><div class="prototype-media"><video controls preload="metadata" playsinline aria-label="Level Up Runner prototype video" src="Video/Level up runner.mov"></video></div><figcaption><span class="prototype-name">Level Up Runner</span><span class="prototype-number">03</span></figcaption></figure>
+                    <figure class="prototype-card reveal"><div class="prototype-media"><video controls preload="metadata" playsinline aria-label="Ball Blast prototype video" src="Video/Ball Blast.mp4"></video></div><figcaption><span class="prototype-name">Ball Blast</span><span class="prototype-number">04</span></figcaption></figure>
+                    <figure class="prototype-card reveal"><div class="prototype-media"><video controls preload="metadata" playsinline aria-label="Dice Merge prototype video" src="Video/Dice Merge.mp4"></video></div><figcaption><span class="prototype-name">Dice Merge</span><span class="prototype-number">05</span></figcaption></figure>
+                    <figure class="prototype-card reveal"><div class="prototype-media"><video controls preload="metadata" playsinline aria-label="AR Demo prototype video" src="Video/Ar Demo.mp4"></video></div><figcaption><span class="prototype-name">AR Demo</span><span class="prototype-number">06</span></figcaption></figure>
+                    <figure class="prototype-card reveal"><div class="prototype-media"><video controls preload="metadata" playsinline aria-label="AR Zombie Demo prototype video" src="Video/AR Zombie Demo.mp4"></video></div><figcaption><span class="prototype-name">AR Zombie Demo</span><span class="prototype-number">07</span></figcaption></figure>
+                </div>
+            </div>
         </section>
-
-
-    </body>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><strong>Hiten Maru</strong><span>Unity Game Developer</span></div></footer>
+</body>
 </html>

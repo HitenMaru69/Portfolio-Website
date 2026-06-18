@@ -1,50 +1,102 @@
 <!DOCTYPE html>
-<html>
-    <head>
-            <Title> Portfolio </Title>
-            <link rel="stylesheet" href="CommonStyle.css">
-            <link rel="stylesheet" href="HomePageStyle.css">
-    </head>
-    <body>
-        <header>
-            <section class="NameStyle">
-                <div>
-                    <strong>Hiten Maru</strong>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hiten Maru is a Unity game developer creating polished games, gameplay systems, and interactive prototypes.">
+    <title>Hiten Maru | Unity Game Developer</title>
+    <link rel="stylesheet" href="CommonStyle.css">
+    <link rel="stylesheet" href="HomePageStyle.css">
+    <script src="site.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="HomePage.html" aria-label="Hiten Maru home">
+                <span class="brand-mark">HM</span>
+                <span class="brand-name">Hiten Maru</span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Toggle navigation"><span></span></button>
+            <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="HomePage.html" aria-current="page">Home</a></li>
+                    <li><a href="GamePage.html">Games</a></li>
+                    <li><a href="PrototypePage.html">Prototypes</a></li>
+                    <li><a href="ContactPage.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-inner">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Player-first experiences</p>
+                    <h1 id="hero-title">Hiten<br>Maru</h1>
+                    <p class="hero-role">Unity Game Developer</p>
+                    <p class="hero-summary">I turn ideas into playable experiences, from fine-tuning gameplay to optimizing performance across multiple platforms.</p>
+                    <div class="hero-actions">
+                        <a class="button" href="GamePage.html">Explore games <span class="button-arrow" aria-hidden="true">&#8599;</span></a>
+                        <a class="button button-secondary" href="PrototypePage.html">View prototypes</a>
+                    </div>
                 </div>
-
-                <nav>
-                    <ul>
-                        <li><a href="HomePage.html">Home</a></li>
-                        <li><a href="GamePage.html">Game</a></li>
-                        <li><a href="PrototypePage.html">Prototype</a></li>
-                        <li><a href="ContactPage.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </header>
-
-        <section class="Info">
-            <h1>Unity Game Developer</h1>
-            <!-- <div>
-                <a href="#about">Learn More</a>
-            </div> -->
+            </div>
+            <div class="hero-status"><span class="status-dot"></span> Unity game developer</div>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                "Hello! I'm Hiten Maru, a passionate Unity Game Developer with experience in creating games for multiple platforms.
-                 I turn ideas into playable experiences, whether it’s fine-tuning gameplay or optimizing performance.
-                  I love solving game development challenges and bringing ideas to life through interactive experiences."
-            </p>
-            
-            <ul>
-                <li><a href="GamePage.html">Game</a></li>
-                <li><a href="PrototypePage.html">Prototype</a></li>
-                <li><a href="ContactPage.html">Contact</a></li>
-            </ul>
+        <section class="section about-band" id="about" aria-labelledby="about-title">
+            <div class="container about-grid">
+                <div class="about-title reveal">
+                    <p class="eyebrow">Profile</p>
+                    <h2 id="about-title">About<br>Me</h2>
+                </div>
+                <div class="about-copy reveal">
+                    <p>Hello! I'm Hiten Maru, a passionate Unity Game Developer with experience in creating games for multiple platforms. I turn ideas into playable experiences, whether it's fine-tuning gameplay or optimizing performance. I love solving game development challenges and bringing ideas to life through interactive experiences.</p>
+                    <div class="about-links">
+                        <a class="button" href="GamePage.html">Games</a>
+                        <a class="button button-secondary" href="PrototypePage.html">Prototypes</a>
+                        <a class="button button-secondary" href="ContactPage.html">Contact</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <section class="section" aria-labelledby="portfolio-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div>
+                        <p class="eyebrow">Portfolio</p>
+                        <h2 class="section-title" id="portfolio-title">Explore the work</h2>
+                    </div>
+                    <span class="section-count">03 sections</span>
+                </div>
+                <div class="work-links reveal">
+                    <a class="work-link" href="GamePage.html">
+                        <span class="work-link-number">01 / Games</span>
+                        <div><h3>Published Games</h3><p>Released titles and gameplay showcases.</p></div>
+                        <span class="button-arrow" aria-hidden="true">&#8599;</span>
+                    </a>
+                    <a class="work-link" href="PrototypePage.html">
+                        <span class="work-link-number">02 / Prototypes</span>
+                        <div><h3>Experiments</h3><p>Mechanics, concepts, and playable ideas.</p></div>
+                        <span class="button-arrow" aria-hidden="true">&#8599;</span>
+                    </a>
+                    <a class="work-link" href="ContactPage.html">
+                        <span class="work-link-number">03 / Contact</span>
+                        <div><h3>Let's Connect</h3><p>GitHub, LinkedIn, and direct email.</p></div>
+                        <span class="button-arrow" aria-hidden="true">&#8599;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    </body>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <strong>Hiten Maru</strong>
+            <span>Unity Game Developer</span>
+        </div>
+    </footer>
+</body>
 </html>

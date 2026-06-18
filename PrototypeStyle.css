@@ -1,21 +1,83 @@
-.Prototype h2{
-    text-align: center;
-    color: white;
-    font-size: 30px;
+.prototype-section {
+    background: #0b0d0e;
 }
 
-.Prototype .game-container {
+.prototype-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 42px 22px;
+}
+
+.prototype-card {
+    grid-column: span 6;
+    min-width: 0;
+    margin: 0;
+}
+
+.prototype-card:nth-child(3n) {
+    grid-column: span 12;
+}
+
+.prototype-card:nth-child(3n) .prototype-media {
+    aspect-ratio: 16 / 7;
+}
+
+.prototype-media {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    border: 1px solid var(--line);
+    background: #000;
+}
+
+.prototype-media::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 7px 10px;
+    color: var(--bg);
+    background: var(--accent);
+    content: "PROTOTYPE";
+    font-family: Consolas, monospace;
+    font-size: 0.64rem;
+    font-weight: 800;
+    pointer-events: none;
+}
+
+.prototype-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.prototype-card figcaption {
     display: flex;
-    justify-content: center;
-    gap: 30px; 
-    flex-wrap: wrap; 
-    margin: 0 auto; 
+    padding-top: 14px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
 }
 
+.prototype-name {
+    font-size: 1.1rem;
+    font-weight: 750;
+}
 
+.prototype-number {
+    color: var(--muted);
+    font-family: Consolas, monospace;
+    font-size: 0.7rem;
+}
 
-.Prototype video{
+@media (max-width: 760px) {
+    .prototype-card,
+    .prototype-card:nth-child(3n) {
+        grid-column: span 12;
+    }
 
-   height: 200px;
-   width: 200px;
+    .prototype-card:nth-child(3n) .prototype-media,
+    .prototype-media {
+        aspect-ratio: 4 / 3;
+    }
 }

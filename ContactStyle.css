@@ -1,27 +1,110 @@
-.Contact h2{
-    text-align: center;
-    color: white;
-    font-size: 30px;
+.contact-hero {
+    position: relative;
+    min-height: calc(100vh - var(--header-height));
+    padding: 88px 0;
+    background: #0b0d0e;
 }
 
-
-.Contact .game-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px; 
-    flex-wrap: wrap; 
-    margin: 0 auto; 
+.contact-layout {
+    display: grid;
+    min-height: calc(100vh - var(--header-height) - 176px);
+    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+    align-items: center;
+    gap: 90px;
 }
 
-.Contact p{
-    color: white;
-    font-size: 20px;
-    text-align: center;
+.contact-copy h1 {
+    max-width: 760px;
+    margin-bottom: 24px;
+    font-size: clamp(3.3rem, 8vw, 7.2rem);
+    font-weight: 900;
 }
 
-.Contact img{
+.contact-copy > p:not(.eyebrow) {
+    max-width: 650px;
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+}
 
-    
-    width: 30px;
-    height: 30px;
+.contact-list {
+    display: grid;
+    border-top: 1px solid var(--line);
+}
+
+.contact-link {
+    display: grid;
+    min-height: 104px;
+    padding: 18px 4px;
+    grid-template-columns: 50px 1fr auto;
+    align-items: center;
+    gap: 18px;
+    border-bottom: 1px solid var(--line);
+    transition: padding 180ms ease, background 180ms ease;
+}
+
+.contact-link:hover {
+    padding-right: 14px;
+    padding-left: 14px;
+    background: var(--surface-raised);
+}
+
+.contact-icon {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    border: 1px solid var(--line);
+    background: var(--text);
+}
+
+.contact-icon img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.contact-label strong,
+.contact-label span {
+    display: block;
+}
+
+.contact-label strong {
+    margin-bottom: 2px;
+    font-size: 1rem;
+}
+
+.contact-label span {
+    overflow: hidden;
+    color: var(--muted);
+    font-family: Consolas, monospace;
+    font-size: 0.72rem;
+    text-overflow: ellipsis;
+}
+
+.contact-arrow {
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 860px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 54px;
+    }
+}
+
+@media (max-width: 520px) {
+    .contact-hero {
+        padding: 62px 0;
+    }
+
+    .contact-layout {
+        min-height: 0;
+    }
+
+    .contact-link {
+        grid-template-columns: 44px minmax(0, 1fr) auto;
+        gap: 12px;
+    }
 }
